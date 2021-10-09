@@ -1,0 +1,27 @@
+{
+  "name": "aplicacionsalon",
+  "version": "1.0.0",
+  "description": "aplicación para reservar turnos en un salón de belleza simulando el acceso a una base de datos mediante un archivo json",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloArceE/aplicacionSalon.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "js",
+    "gulp",
+    "nodejs"
+  ],
+  "author": "Pablo Arce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloArceE/aplicacionSalon/issues"
+  },
+  "homepage": "https://github.com/PabloArceE/aplicacionSalon#readme"
+}
