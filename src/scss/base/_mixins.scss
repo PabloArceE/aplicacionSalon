@@ -1,0 +1,39 @@
+/* Este archivo contiene los mixins que despues serán incluidos dentro de los archivos en layout, tales como los mediaquery y una configuración general del grid  */
+
+@mixin mobile{
+    @media(min-width: #{$mobile}){
+        @content;
+    }
+}
+/* Mixin: en una propiedad de sass, es como una función en js que puede ser reutilizada.
+se la declara con @mixin nombre (argumentos){contenido}
+en este caso es utilizada para ejecutar un mediaquery para determinar las variables de estilos dependiendo el tamaño de la pantalla del dispositivo, en un marco de responsive design
+ */
+ /* Mediaquery en sass: 
+ - Con min-width fijamos el valor mínimo a paratir del cual se van a aplicar las configuraciones de estilo.
+ - Llamado a variable con sintaxis de sass #{$nombreVariable}
+   */
+   /* @content: indicaciones para establecer valores que se incluyen en el cuerpo del mixin cuando se lo llama dentro del programa */
+   /* @include nombreMixin (parámetros){valores}
+   Ejm @include mobile{
+       h1{
+           font-size:2rem;
+       }
+   } */
+
+   @mixin tablet{
+       @media (min-width: #{$tablet}){
+           @content;
+       }
+   }
+
+@mixin desktop{
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+@mixin grid($colunms, $space){
+    display: grid;
+    gap: $space;
+    grid-template-columns: repeat($columns, 1fr);
+}

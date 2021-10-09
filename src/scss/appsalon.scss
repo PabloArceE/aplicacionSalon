@@ -1,0 +1,13 @@
+/* Enste es el archivo es el main de todo el desarrollo SCSS
+por lo que en el solo se incluyen las importaciones de los archivos scss con las distintas funciones
+Sass es un metalenguaje de CSS, es un lenguaje de scripting con una dos sintaxis, .sass y .scss;
+Sass debe compilarse y deriva en un archivo .css con todas las configuraciones trabajadas en los archivos .scss */
+
+@import '/src/scss/base/normalize';
+@import '/src/scss/base/variables';
+@import '/src/scss/base/utilidades';
+@import '/src/scss/base/globales';
+@import '/src/scss/base/mixins';
+
+
+/* Importa el orden en que se cargan los archivos puesto que si se requiere utilizar una variable declarada en un archivo este debe ser anterior al archivo donde se llama a la variable */

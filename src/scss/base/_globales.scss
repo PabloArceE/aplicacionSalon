@@ -1,0 +1,50 @@
+/* Este archivo scss contiene todas las clases que se aplican al programa en general */
+
+/* Por lo general en este archivo se inicializan los valores de las etiquetas html, la configuración de Paul Irish para ajustar el width con el padding y el texto; y la reducción del font-sizing en la entiqueta html para igualar 1rem = 1px  */
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: $fuentePrincipal;
+    font-size: 1.6rem;
+}
+h1,h2,h3{
+    font-family: $fuentePrincipal;
+    margin: 0 auto;
+    font-weight: 900;
+    color: $azul;
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    color: $blanco;
+    font-size: 2rem;
+}
+// Configuración para que la imagen se expanda al 100%
+img{
+    max-width: 100%;
+}
+//Configuración para que los links no tengan subrayado 
+a{
+    text-decoration: none;
+}
+//Configuración del contenedor general de los distintos div
+.contenedor{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
